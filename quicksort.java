@@ -34,5 +34,12 @@ public class Quicksort
    sort(a,lo,j-1);
    sort(a,j+1,hi);
  }
+  
+  private static void exch(Object[] a, int i, int j) 
+  {     
+    Object tmp = a[i];
+    a[i] = a[j];
+    a[j] = tmp;
+  }
 
 }
